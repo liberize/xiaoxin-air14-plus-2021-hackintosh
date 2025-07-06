@@ -1758,7 +1758,7 @@
                     <key>bluetoothInternalControllerInfo</key>
                     <data>AAAAAAAAAAAAAAAAAAA=</data>
                     <key>boot-args</key>
-                    <string>keepsyms=1 debug=0x100 -vi2c-force-polling -wegnoegpu</string>
+                    <string>keepsyms=1 debug=0x100 -wegnoegpu</string>
                     <key>csr-active-config</key>
                     <data>AQAAAA==</data>
                     <key>prev-lang:kbd</key>

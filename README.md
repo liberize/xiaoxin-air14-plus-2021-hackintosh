@@ -1,6 +1,6 @@
 # Hackintosh for Lenovo XiaoXin Air14 Plus 2021
 
-This EFI aims to work with `macOS Monterey` now. Stay tuned :)
+This EFI works with `macOS Monterey`.
 
 ## Detail
 
@@ -11,15 +11,15 @@ This EFI aims to work with `macOS Monterey` now. Stay tuned :)
 | GPU        | AMD Vega 8 (iGPU)               | Partial | NootedRed.kext, have to disable gpu rasterization for chrome |
 | HDMI       | AMD Vega 8 (iGPU)               | Yes     | NootedRed.kext |
 | Brightness | Builtin Display                 | Yes     | BrightnessKeys.kext, add ACPI patch _OSI to XOSI and SSDT-XOSI |
-| Audio      | ALC257                          | Yes     | AppleALC.kext, set layout-id=11 in DeviceProperties |
-| Microphone | Builtin Microphone Array        | Yes     | AMDMicrophone.kext, place in /Library/Extension/ |
-| Ethernet   | USB Adapter                     | Yes     | RealtekRT8111.kext? |
+| Audio      | Realtek ALC257                  | Yes     | AppleALC.kext, set layout-id=11 in DeviceProperties |
+| Microphone | Builtin Microphone Array        | Yes     | AMDMicrophone.kext, set csr-active-config to 01000000 and place kext in /Library/Extension/ |
+| Ethernet   | External USB to GbE Adapter     | Yes     | See USB |
 | WiFi       | Intel AX200                     | Yes     | AirportItlwm.kext, use OS-specific version |
 | Bluetooth  | Intel AX200                     | Yes     | IntelBlueToothFirmware.kext + IntelBTPatcher.kext + BlueToolFixup.kext |
-| Camera     | Builtin WebCam (USB)            | Yes     | See USB |
-| Keyboard   | Builtin Keyboard                | Yes     | VoodooPS2Controller.kext? |
-| TrackPad   | Builitin I2C TrackPad           | Yes     | VoodooI2C.kext + VoodooI2CHID.kext, disable VoodooInput.kext in VoodooPS2Controller.kext, load kexts in correct order |
+| Camera     | Builtin Camera (USB)            | Yes     | See USB |
+| Keyboard   | Builtin Keyboard (PS2)          | Yes     | VoodooPS2Controller.kext |
+| TrackPad   | Builtin TrackPad (I2C)          | Yes     | VoodooI2C.kext + VoodooI2CHID.kext, disable VoodooInput.kext in VoodooPS2Controller.kext, load kexts in correct order |
 | USB        | 2 Type-A + 2 Type-C             | Partial | USBToolBox.kext + UTBMap.kext, sometimes some port not working |
 | SD Card    | BayHubTech SD Card Reader (PCI) | Yes     | CtlnaSDXC.kext, spoof device id in DeviceProperties |
-| Battery    | Builitin Battery                | Yes     | SMCBatteryManagement.kext? battery percent is ok |
+| Battery    | Builtin Battery                 | Yes     | SMCBatteryManagement.kext, battery percent is ok |
 | Sleep      | -                               | No      | |
