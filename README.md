@@ -12,7 +12,7 @@ This EFI works with `macOS Monterey`.
 | HDMI       | AMD Vega 8 (iGPU)               | Yes     | NootedRed.kext |
 | Brightness | Builtin Display                 | Yes     | BrightnessKeys.kext, add ACPI patch _OSI to XOSI and SSDT-XOSI |
 | Audio      | Realtek ALC257                  | Yes     | AppleALC.kext, set layout-id=11 in DeviceProperties |
-| Microphone | Builtin Microphone Array        | Yes     | AMDMicrophone.kext, set csr-active-config to 01000000 and place kext in /Library/Extension/ |
+| Microphone | Builtin Microphone Array        | Yes     | AMDMicrophone.kext, set csr-active-config to 01000000 and place kext in /Library/Extensions/ |
 | Ethernet   | External USB to GbE Adapter     | Yes     | See USB |
 | WiFi       | Intel AX200                     | Yes     | AirportItlwm.kext, use OS-specific version |
 | Bluetooth  | Intel AX200                     | Yes     | IntelBlueToothFirmware.kext + IntelBTPatcher.kext + BlueToolFixup.kext |
